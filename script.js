@@ -1,7 +1,7 @@
 function firstChar(text) {
   // your code here
 	 let result = text.replace(/\s+/g, '')
-	return result[1]
+	return result[0]
 }
 
 // Do not change the code below
