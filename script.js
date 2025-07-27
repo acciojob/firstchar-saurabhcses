@@ -1,10 +1,10 @@
-function firstChar(text) {
-  // your code here
-	 let result = text.replace(/\s+/g, '')
-	return result[0]
-}
+Here’s how you can adjust your function:
 
-// Do not change the code below
-//Uncomment the following line to show the prompt popup
-const text = prompt("Enter text:");
-alert(firstChar(text));
+function firstChar(text) {
+    let trimmedText = text.trim();
+
+    if (trimmedText.length === 0) {
+        return '';
+    }
+    return trimmedText[0];
+}
