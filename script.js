@@ -1,10 +1,10 @@
-Here’s how you can adjust your function:
-
-function firstChar(text) {
-    let trimmedText = text.trim();
-
-    if (trimmedText.length === 0) {
-        return '';
+function firstChar(str) {
+  // Loop through each character
+  for (var i = 0; i < str.length; i++) {
+    if (str[i] !== ' ') {
+      return str[i];
     }
-    return trimmedText[0];
+  }
+  // If only spaces or empty string
+  return '';
 }
